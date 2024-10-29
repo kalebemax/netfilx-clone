@@ -5,28 +5,39 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+:root {
+
+    --hover-color: rgba(128, 128, 128, 0.514);
+    --btn-color: rgba(128, 128, 128, 0.336);
+    --text-color: white;
+    --bg-color: black;
+
+
+}
+
 body {
     height: 100vh;
     width: 100vw;
     margin-bottom: 300px;
-    background-color: black;
+    background-color: var(--bg-color);
     overflow-x: hidden;
 }
 
 header {
+    top: 0;
     height: 70px;
     width: 100vw;
     padding: 15px;
     position: fixed;
 
-   display: flex;
-   justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 main {
-    color: white;
+    color: var(--text-color);
     position: absolute;
-    
+
     top: 60%;
     left: 5%;
     width: 37vw;
@@ -39,7 +50,7 @@ h1 {
 
 h2 {
     font-weight: bold;
-    color: white;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
@@ -59,21 +70,18 @@ button {
 }
 
 #btn {
-    background-color: rgba(128, 128, 128, 0.336);
-    color: white;
+    background-color: var(--btn-color);
+    color: var(--text-color);
     width: 160px;
 
 }
 
-#btn:hover {
-    background-color: rgba(128, 128, 128, 0.514);
+#btn:hover,
+button:hover {
+    background-color: var(--hover-color);
     transition: 0.3s all ease-in-out;
 }
 
-button:hover {
-    background-color: rgba(255, 255, 255, 0.733);
-    transition: 0.3s all ease-in-out;
-}
 
 .img {
     width: 150px;
@@ -92,21 +100,27 @@ button:hover {
 
 .modal-conteudo {
     background-color: #181818;
-    color: white;
+    color: var(--text-color);
     margin: 30px auto;
     padding: 20px;
-    width: 60%;
+    max-width: 90%;
 }
 
 .botao-som {
+    background-color: var(--btn-color);
     width: 40px;
     border: none;
     cursor: pointer;
     z-index: 4;
     position: absolute;
-    top: 654px;
-    left: 337px;
+    top: 130px;
+    right: 96px;
 }
+
+.botao-som:hover {
+    background-color: var(--hover-color);
+}
+
 
 #carouselExampleControls {
     margin-left: 60px;
@@ -125,6 +139,25 @@ button:hover {
 
 video {
     margin-top: 10px;
-    width: 100vw;
+    max-width: 100%;
     min-height: 80vh;
+}
+
+@media (max-width: 768px) {
+
+    main {
+        width: 80vw;
+        top: 150px;
+        left: 10%;
+        font-size: 10px;
+    }
+
+    .botao-som {
+        top: 385px;
+        left: 315px;
+    }
+
+    h2 {
+        padding-right: 50px;
+    }
 }
