@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 300px;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+header {
+    height: 70px;
+    width: 100vw;
+    padding: 15px;
+    position: fixed;
+
+   display: flex;
+   justify-content: space-between;
+}
+
+main {
+    color: white;
+    position: absolute;
+    
+    top: 60%;
+    left: 5%;
+    width: 37vw;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+button {
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    border-radius: 2px;
+    width: 100px;
+    height: 35px;
+}
+
+#btn {
+    background-color: rgba(128, 128, 128, 0.336);
+    color: white;
+    width: 160px;
+
+}
+
+#btn:hover {
+    background-color: rgba(128, 128, 128, 0.514);
+    transition: 0.3s all ease-in-out;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.733);
+    transition: 0.3s all ease-in-out;
+}
+
+.img {
+    width: 150px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-conteudo {
+    background-color: #181818;
+    color: white;
+    margin: 30px auto;
+    padding: 20px;
+    width: 60%;
+}
+
+.botao-som {
+    width: 40px;
+    border: none;
+    cursor: pointer;
+    z-index: 4;
+    position: absolute;
+    top: 654px;
+    left: 337px;
+}
+
+#carouselExampleControls {
+    margin-left: 60px;
+}
+
+#avatar {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+#logo {
+    width: 70px;
+    height: 20px;
+}
+
+video {
+    margin-top: 10px;
+    width: 100vw;
+    min-height: 80vh;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix - DevClub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="midia/logo.png" alt="logo">
+    <img id="avatar" src="midia/avatar.png" alt="avatar">
+  </header>
+  <video class="video" src="midia/stranger-things.mp4" autoplay muted loop></video>
+  <button id="btn1" class="botao-som"><img src="midia/volume_off_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+      alt="volume-off"></button>
+  <main>
+    <h1>Stranger Things</h1>
+    <p>Stranger Things é uma série de ficção científica criada pelos irmãos Duffer para a Netflix. Situada na cidade
+      ficcional de Hawkins, Indidana, a trama começa no ano de 1983 com o desaparecimento do garoto Will.</p>
+    <button>Assistir</button>
+    <button id="btn">Mais Informações</button>
+  </main>
+
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <h2>Principais Filmes e Séries</h2>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="img" src="midia/abyss.jpg" alt="abyss">
+        <img class="img" src="midia/chokehold.jpg" alt="chokehold">
+        <img class="img" src="midia/equalizer.jpg" alt="equalizer">
+        <img class="img" src="midia/f1.jpg" alt="f1">
+      </div>
+      <div class="carousel-item">
+        <img class="img" src="midia/moonfall.jpg" alt="moonfall">
+        <img class="img" src="midia/lift.jpg" alt="lift">
+        <img class="img" src="midia/jaula.jpg" alt="jaula">
+        <img class="img" src="midia/hunter.jpg" alt="hunter">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+
+  <div class="modal">
+    <div class="modal-conteudo">
+      <h2>Stranger Things</h2>
+      <p>Stranger Things é uma série de ficção científica criada pelos irmãos Duffer para a Netflix. Situada na cidade
+        ficcional de Hawkins, Indidana, a trama começa no ano de 1983 com o desaparecimento do garoto Will.</p>
+      <p>Gênero: <strong>Ficção Científica</strong></p>
+      <p>Ano de Lançamento: <strong>2016</strong></p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
