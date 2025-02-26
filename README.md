@@ -2,7 +2,7 @@
 
 Um clone da interface da Netflix desenvolvido com React.
 
-<img src="https://github.com/lucas-santos-dev/netflix-clone/blob/main/src/assets/img/netflix-clone.png" alt="Imagem do projeto Netflix Clone">
+<img src="midia/imagem-site.png" alt="Imagem do projeto Netflix Clone">
 
 ## Tecnologias Utilizadas
 - HTML5
