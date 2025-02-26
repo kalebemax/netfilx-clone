@@ -1,6 +1,6 @@
 # Netflix Clone
 
-Um clone da interface da Netflix desenvolvido com React.
+Um clone da interface da Netflix.
 
 <img src="midia/imagem-site.png" alt="Imagem do projeto Netflix Clone">
 
